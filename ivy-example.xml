@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+  <info organisation="com.ttgf" module="myGreatModule" revision="1.0.0" status="release" publication="20150928150831">
+  </info>
+  <configurations>
+    <conf name="debug" visibility="public"/>
+    <conf name="release" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="myGreatModule-debug" type="zip" ext="zip" conf="debug"/>
+    <artifact name="myGreatModule-release" type="zip" ext="zip" conf="release"/>
+  </publications>
+  <dependencies>
+    <dependency org="com.ttgf" name="myGreatDep" rev="1.2.3" conf="debug;release"/>
+    <dependency org="com.ttgf" name="myGreatDebugDep" rev="2.3.4" conf="debug"/>
+  </dependencies>
+</ivy-module>
