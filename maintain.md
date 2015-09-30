@@ -10,7 +10,7 @@ In [ivydepparse/\__init\__.py](ivydepparse/__init__.py) to `7.8.9` in this examp
 
 ## Extend the changelog
 
-In [README.md](README.md)
+In [README.rst](README.rst)
 
 ## Generate the package to be published
 
