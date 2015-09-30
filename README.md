@@ -1,4 +1,4 @@
-# ivydep.py - Ivy Dependency Parser
+# ivydepparse.py - Ivy Dependency Parser
 
 Parsing an Ivy module descriptor (`ivy.xml`) for its dependencies from a tool like CMake can be
 tough. This script takes a descriptor on the standard input and prints its dependencies in an easily
@@ -7,7 +7,7 @@ parsable format.
 ## Usage
 
 ```
-$ ./ivydep.py < ivy.xml
+$ ./ivydepparse.py < ivy.xml
 ```
 
 ## Example
@@ -22,7 +22,7 @@ $ ./ivydep.py < ivy.xml
 ```
 
 ```
-$ ./ivydep.py < ivy-example.xml
+$ ./ivydepparse.py < ivy-example.xml
 org=com.ttgf|name=myGreatDep|rev=1.2.3|conf=debug,release;org=com.ttgf|name=myGreatDebugDep|rev=2.3.4|conf=debug
 ```
 
