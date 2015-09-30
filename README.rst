@@ -67,6 +67,10 @@ The order of the dependencies in the output is not specified.
 Changelog
 ---------
 
+**1.0.1** (2015-09-30):
+
+-  Dependencies with same key are now aggregated.
+
 **1.0.0** (2015-09-30):
 
 -  Initial version.
