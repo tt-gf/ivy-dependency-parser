@@ -6,16 +6,17 @@ import xml.dom.minidom as minidom
 
 class Dependency:
     def __init__(self, node):
+        self.__attrs = {}
         for attr in self.__attr_names:
             try:
-                setattr(self, '_' + attr, node.attributes[attr].value)
+                self.__attrs[attr] = node.attributes[attr].value
             except KeyError:
-                setattr(self, '_' + attr, '')
+                self.__attrs[attr] = ''
 
     def __str__(self):
         key_value_pairs = []
         for attr in self.__attr_names:
-            key_value_pairs.append(attr + '=' + self._escape(getattr(self, '_' + attr)))
+            key_value_pairs.append(attr + '=' + self._escape(self.__attrs[attr]))
         return '|'.join(key_value_pairs)
 
     @classmethod
