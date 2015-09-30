@@ -4,10 +4,16 @@ Parsing an Ivy module descriptor (`ivy.xml`) for its dependencies from a tool li
 tough. This script takes a descriptor on the standard input and prints its dependencies in an easily
 parsable format.
 
+## Installation
+
+```
+$ sudo pip install ivydepparse
+```
+
 ## Usage
 
 ```
-$ ./ivydepparse.py < ivy.xml
+$ ivydepparse < ivy.xml
 ```
 
 ## Example
@@ -22,7 +28,7 @@ $ ./ivydepparse.py < ivy.xml
 ```
 
 ```
-$ ./ivydepparse.py < ivy-example.xml
+$ ivydepparse < ivy-example.xml
 org=com.ttgf|name=myGreatDep|rev=1.2.3|conf=debug,release;org=com.ttgf|name=myGreatDebugDep|rev=2.3.4|conf=debug
 ```
 
@@ -41,3 +47,9 @@ For each dependency, all attributes are guaranteed to be present and in that ord
 `rev`, `conf`.
 
 Attributes can be empty. An empty attribute appears as `name=`.
+
+## Changelog
+
+**1.0.0** (2015-09-30):
+
+* Initial version.

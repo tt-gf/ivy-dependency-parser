@@ -1,1 +1,3 @@
+/dist/
+/ivydepparse.egg-info/
 *.pyc

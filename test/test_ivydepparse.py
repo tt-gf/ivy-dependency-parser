@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import ivydepparse
+import ivydepparse.ivydepparse as ivydepparse
 import unittest
 
 class IvyDepParseTests(unittest.TestCase):

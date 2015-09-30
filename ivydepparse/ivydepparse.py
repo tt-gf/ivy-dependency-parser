@@ -45,5 +45,5 @@ def convert(file):
     dependencies = Dependencies(document.documentElement.getElementsByTagName('dependency'))
     return str(dependencies)
 
-if __name__ == '__main__':
+def main():
     print convert(sys.stdin)
