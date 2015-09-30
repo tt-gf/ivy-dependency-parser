@@ -36,3 +36,8 @@ If any value contains one of our separators, they get escaped as follows:
 * `;` is replaced by `,`
 * `|` is replaced by `:`
 * `=` is replaced by `:`
+
+For each dependency, all attributes are guaranteed to be present and in that order: `org`, `name`,
+`rev`, `conf`.
+
+Attributes can be empty. An empty attribute appears as `name=`.
