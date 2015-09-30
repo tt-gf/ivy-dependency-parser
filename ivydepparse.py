@@ -40,7 +40,10 @@ class Dependencies:
     def __str__(self):
         return ';'.join(str(dep) for dep in self.__deps)
 
-if __name__ == '__main__':
-    document = minidom.parse(sys.stdin)
+def convert(file):
+    document = minidom.parse(file)
     dependencies = Dependencies(document.documentElement.getElementsByTagName('dependency'))
-    print dependencies
+    return str(dependencies)
+
+if __name__ == '__main__':
+    print convert(sys.stdin)
