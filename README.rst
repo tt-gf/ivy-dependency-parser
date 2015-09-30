@@ -28,6 +28,7 @@ Example
 
     ...
         <dependency org="com.ttgf" name="myGreatDep" rev="1.2.3" conf="debug;release"/>
+        <dependency org="com.ttgf" name="myGreatDep" rev="1.2.3" conf="other"/>
         <dependency org="com.ttgf" name="myGreatDebugDep" rev="2.3.4" conf="debug"/>
     ...
 
@@ -36,7 +37,7 @@ results in
 ::
 
     $ ivydepparse < ivy-example.xml
-    org=com.ttgf|name=myGreatDep|rev=1.2.3|conf=debug,release;org=com.ttgf|name=myGreatDebugDep|rev=2.3.4|conf=debug
+    org=com.ttgf|name=myGreatDebugDep|rev=2.3.4|conf=debug;org=com.ttgf|name=myGreatDep|rev=1.2.3|conf=debug,release,other
 
 Details
 -------
@@ -56,6 +57,12 @@ For each dependency, all attributes are guaranteed to be present and in
 that order: ``org``, ``name``, ``rev``, ``conf``.
 
 Attributes can be empty. An empty attribute appears as ``name=``.
+
+Dependencies having the same key (org/name/rev) will be output as one single dependency.
+
+The order inside ``conf`` in the output is not specified.
+
+The order of the dependencies in the output is not specified.
 
 Changelog
 ---------

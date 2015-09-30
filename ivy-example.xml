@@ -12,6 +12,7 @@
   </publications>
   <dependencies>
     <dependency org="com.ttgf" name="myGreatDep" rev="1.2.3" conf="debug;release"/>
+    <dependency org="com.ttgf" name="myGreatDep" rev="1.2.3" conf="other"/>
     <dependency org="com.ttgf" name="myGreatDebugDep" rev="2.3.4" conf="debug"/>
   </dependencies>
 </ivy-module>
