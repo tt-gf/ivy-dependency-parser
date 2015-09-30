@@ -91,3 +91,7 @@ Finally check that the package can be installed from PyPI:
 $ sudo pip uninstall ivydepparse
 $ sudo pip install ivydepparse
 ```
+
+## Add release notes
+
+to [https://github.com/tt-gf/ivy-dependency-parser/tags](https://github.com/tt-gf/ivy-dependency-parser/tags)
