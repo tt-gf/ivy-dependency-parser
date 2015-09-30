@@ -31,6 +31,8 @@ Example
         <dependency org="com.ttgf" name="myGreatDebugDep" rev="2.3.4" conf="debug"/>
     ...
 
+results in
+
 ::
 
     $ ivydepparse < ivy-example.xml
