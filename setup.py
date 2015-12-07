@@ -3,7 +3,7 @@ import ivydepparse
 
 setup(name='ivydepparse',
       version=ivydepparse.__version__,
-      install_requires=['PyGithub'],
+      install_requires=[],
       description='Ivy Dependency Parser',
       long_description=open('README.rst').read(),
       keywords=['ivydepparse',
